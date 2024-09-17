@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafeteriaLeCafé</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo/logocoffe.png">
+</head>
+
+<body>
+    <header> <!--Criar primeiramente o header para iniciar a parte superior-->
+        <div class="principal">
+            <div>
+                <div class="suporte">
+                    <img src="icones/call.png" alt="Atendimento ao cliente" width="80px" height="80px">
+                    <div class="suportecliente">
+                        <span Suporte ao cliente>Suporte ao Cliente</span>
+                    </div>
+                    <div class="logo">
+                        <img src="icones/logo.png" alt="Logotipo da cafeteria" width="400px" height="400px">
+                    </div>
+                    <div class="alinhar">
+                        <img src="icones/entrar.png" alt="Entrar com as credenciais de acesso" width="70px"
+                            height="70px">
+                        <img src="icones/carrinho.png" alt="Carrinho de compra" width="70px" height="70px">
+                        <h4>Carrinho (0)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <nav>
+            <ul class="menuh">
+                <li> <a href="#SOBRE">SOBRE</a> </li>
+                <li> <a href="#PRODUTOS">PRODUTOS</a> </li>
+                <li> <a href="#DESTAQUES">DESTAQUES</a> </li>
+                <li> <a href="#ENCOMENDE">ENCOMENDE</a> </li>
+                <li> <a href="#CONTATOS">CONTATOS</a> </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="banner">
+        <div class="txtbanner">
+            <p>Um lugar ideal para quem ama café</p>
+            <h2>Um bom papo merece <br>um bom café </h2>
+            <a href="#PRODUTOS">Saiba mais</a>
+        </div>
+    </section>
+
+    <!--INICIA AS TAGS E O MAIN PRINCIPAL-->
+
+    <main class="main-conteudo"> <!--TAG MAIN CONTEUDO PRINCIPAL DENTRO DO SITE-->
+        <section class="base-conteudo">
+            <div class="align">
+                <div class="card">
+                    <img src="icones/entrega.png" width="80px" height="80px">
+                    <div class="conteudo">
+                        <span>Entrega Grátis</span>
+                        <p>Acima de R$50</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="icones/desconto.png" width="80px" height="80px">
+                    <div class="conteudo">
+                        <span>Ofertas</span>
+                        <p>Descontos incríveis</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="icones/novidades.png" width="80px" height="80px">
+                    <div class="conteudo">
+                        <span>Novidades</span>
+                        <p>O que há de novo</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="icones/call.png" width="80px" height="80px">
+                    <div class="conteudo">
+                        <span>Contato</span>
+                        <p>(14)3363-7060</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1 class="titulosobre" id="SOBRE">SOBRE LE CAFE PARISIEN</h1>
+            <div class="just">
+                <div class="texto">
+                    <h2>
+                        Localizado no coração da cidade de Brotas, o Le Cafe Parisien é uma charmosa
+                        cafeteria que traz o autêntico sabor de Paris para voce. Nosso ambiente
+                        aconchegante e sofisticado e o local perfeito para quem busca uma pausa
+                        relaxante no meio da rotina, uma reunião com amigos ou um espaçlo inspirador
+                        para trabalhar.
+                    </h2> <br>
+                    <br>
+                    <br>
+                    <div>
+                        <img src="images/quemsomos.png" alt="Imagens da cafeteria e cafés tradicionais" width="750px"
+                            height="450px" linear-gradient(100deg, #000000, #00000020)>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tipos">
+            <h1 class="titulosobre" id="DESTAQUES">DESTAQUES</h1>
+            <div class="container-categoria">
+                <div class="card-categoria categoria-moca">
+                    <p>Cafe Mocca</p>
+                    <span>Ver mais</span>
+                </div>
+                <div class="card-categoria categoria-americano">
+                    <p>Expressao Americano</p>
+                    <span>Ver mais</span>
+                </div>
+                <div class="card-categoria categoria-cappuccino ">
+                    <p>Cappuccino</p>
+                    <span>Ver mais</span>
+                </div>
+            </div>
+
+            <div class="container-categoria">
+                <div class="card-categoria categoria-croassant">
+                    <p>Croassant</p>
+                    <span>Ver mais</span>
+                </div>
+                <div class="card-categoria categoria-bruscheta">
+                    <p>Bruscheta</p>
+                    <span>Ver mais</span>
+                </div>
+                <div class="card-categoria categoria-bolored">
+                    <p>Bolared</p>
+                    <span>Ver mais</span>
+                </div>
+            </div>
+        </section>
+        <!-- AQUI INICIA-SE A GRID DE PRODUTOS-->
+        <section class="container top-products">
+            <h1 class="titulosobre" id="PRODUTOS">PRODUTOS</h1>
+            <div class="container-options">
+                <span class="active">Destaques</span>
+                <span>Mais recentes</span>
+                <span>Mais Vendidos</span>
+            </div>
+
+            <!--Container contendo todos os produtos em GRID -->
+            <div class="container-produtos">
+                <!--PRODUTO 1-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/express-cofee.png" alt="Café Expresso">
+                        <span class="discount">-13%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Cafe expresso</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$6,50 <span>R$8,90</span> </p>
+
+                    </div>
+
+                </div>
+
+                <!--PRODUTO 2-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/capucchino-cofee.png" alt="Cappuccino">
+                        <span class="discount">-10%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Cappuccino</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$9,00 <span>R$10,00</span> </p>
+                    </div>
+
+                </div>
+
+                <!--PRODUTO 3-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/latte-cofee.png" alt="Café Latte">
+                        <span class="discount">-13%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Cafe Latte</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$12,90 <span>R$14,90</span> </p>
+                    </div>
+
+                </div>
+
+                <!--PRODUTO 4-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/moca-cofee.png" alt="Café Mocca">
+                        <span class="discount">-20%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Cafe Mocca</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$7,36 <span>R$9,20</span> </p>
+                    </div>
+
+                </div>
+
+                <!--PRODUTO 5-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/prodcroassant.png" alt="Croassant">
+                        <span class="discount">-6%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Croassant</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$6,80 <span>R$7,25</span> </p>
+                    </div>
+
+                </div>
+
+                <!--PRODUTO 6-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/prodbruschetta.png" alt="Bruschetta">
+                        <span class="discount">-10%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Bruschetta</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$16,11 <span>R$17,90</span> </p>
+                    </div>
+
+                </div>
+
+                <!--PRODUTO 7-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/prodcroquemonsieur.png" alt="Croque Monsenhoir">
+                        <span class="discount">-16%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Croque Monsenhoir</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$15,87 <span>R$18,90</span> </p>
+                    </div>
+
+                </div>
+
+                <!--PRODUTO 8-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/proddogfrances.png" alt="Dog Frances">
+                        <span class="discount">-10%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Dog Frances</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$26,00 <span>R$28,90</span> </p>
+                    </div>
+
+                </div>
+
+                <!--PRODUTO 9-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/prodredvelvet.png" alt="BOlo Red">
+                        <span class="discount">-50%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Bolo Red</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$13,00 <span>R$25,90</span> </p>
+                    </div>
+
+                </div>
+
+                <!--PRODUTO 10-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/prodeclair.png" alt="Le Clair">
+                        <span class="discount">-40%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Le Clair</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$23,34 <span>R$38,90</span> </p>
+                    </div>
+
+                </div>
+
+                <!--PRODUTO 11-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/prodmacarons.png" alt="Macarons">
+                        <span class="discount">-18%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Macarons</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$51,57 <span>R$62,90</span> </p>
+                    </div>
+
+                </div>
+
+                <!--PRODUTO 12-->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="images/prodpavepraline.png" alt="Pave praline">
+                        <span class="discount">-22%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Pave</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$25,62 <span>R$32,90</span> </p>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+
+        <h1 class="titulosobre" id="ENCOMENDE">LOCALIZAÇÃO</h1>
+
+        <section class="local">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7383.526663480439!2d-48.132315014624275!3d-22.286953224205952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c779b125e49013%3A0xf40c7cffdf64daf1!2sLuizinho%20Lanches!5e0!3m2!1spt-BR!2sbr!4v1726050561637!5m2!1spt-BR!2sbr"
+                width="900" height="450" style="border: 3px solid black; border-radius: 20px; box-shadow: 3.5rem;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class=" container blogs">
+            <h1 class="titulosobre">SAIBA MAIS</h1>
+            <div class="container-blogs">
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="images/salao (2).jpg" alt="Imagem Sa com duas mulheres conversando">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>Confraternizar</h3>
+                        <span>11 de setembro 2024</span>
+                        <p>
+                            Reunir-se em uma cafeteria com colegas e amigas é sempre uma ótima oportunidade para relaxar
+                            e confraternizar.
+                            Compartilhar momentos agradáveis enquanto desfruta de um café bem preparado, acompanhado de
+                            doces e salgados de
+                            qualidade, torna o ambiente ainda mais especial. Um local aconchegante, com produtos
+                            cuidadosamente selecionados,
+                            faz toda a diferença para tornar essas ocasiões memoráveis e fortalecer laços de amizade.
+                        </p>
+                        <div class="btn-read-more">Ler Mais</div>
+                    </div>
+                </div>
+
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="images/cafeteriahall.jpg" alt="Imagem da entrada principal da cafeteria">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>Lugar Aconchegante</h3>
+                        <span>11 de setembro 2024</span>
+                        <p>
+                            O ambiente de uma cafeteria confortável e aconchegante é perfeito para relaxar e aproveitar
+                            bons momentos.
+                            Com uma climatização agradável, os clientes podem se sentir à vontade em qualquer época do
+                            ano. Além disso,
+                            a seleção de produtos de qualidade, como cafés artesanais e doces frescos, complementa a
+                            experiência,
+                            tornando cada visita um verdadeiro prazer para os sentidos.
+                        </p>
+                        <div class="btn-read-more">Ler Mais</div>
+                    </div>
+                </div>
+
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="images/cafecoffe.jpg" alt="Imagem de uma xicara de café ">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>Melhor Café</h3>
+                        <span>11 de setembro 2024</span>
+                        <p>
+                            Nossa cafeteria oferece uma experiência única com uma variedade de cafés, que vão desde o
+                            tradicional expresso até
+                            opções especiais de bebidas quentes e frias. Cada bebida é preparada com grãos selecionados,
+                            garantindo qualidade
+                            total em cada xícara. Seja para aquecer os dias frios ou refrescar nas tardes quentes, nosso
+                            cardápio atende a
+                            todos os gostos, proporcionando sabor e excelência em cada gole.
+                        </p>
+                        <div class="btn-read-more">Ler Mais</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer" id="CONTATOS">Informação de contato</p>
+                    <ul>
+                        <li>
+                            R. João Malaguti, 35 - Brotas - SP
+                        </li>
+                        <li>Telefone: (14) 3653-5339</li>
+                        <li>Fax: (14) 3653-5339</li>
+                        <li>EmaiL: Sesi@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <span class="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <span class="pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </span>
+                        <span class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="information">
+                    <p class="title-footer">Informações</p>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Informações de Entrega</a></li>
+                        <li><a href="#">ermos e Condições</a></li>
+                        <li><a href="#">Contate-nos</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Minha conta</p>
+
+                    <ul>
+                        <li><a href="#">Minha conta</a></li>
+                        <li><a href="#">Históricos de pedidos</a></li>
+                        <li><a href="#">Lista de desejos</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">newsletter</p>
+
+                    <div class="content">
+                        <p>
+                            Se inscreva para ter informações e ofertas exclusivas sobre a Le Café Parisien
+                        </p>
+                        <input type="email" placeholder="Insira seu email aqui">
+                        <button>Inscreva-se</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    Desenvolvido por los mejores professores &copy; 2024
+                </p>
+
+                <img src="images/payment.png" alt="Pagos">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
